@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import {CompanyDataService} from '../../company-data/service';
+
 @Component({
   selector: 'app-company-sidenav',
   templateUrl: './company-sidenav.component.html',
@@ -7,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CompanySidenavComponent implements OnInit {
 
-  constructor() { }
+  constructor(private companyDataService: CompanyDataService) { }
 
   ngOnInit() {
   }
